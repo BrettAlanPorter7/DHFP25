@@ -1,0 +1,160 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;    
+    text-align: center;
+  }
+
+/* Header Styling */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styling */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Path options buttons */
+.path-options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.path-option {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.path-option:hover {
+    background-color: #44c1ae;
+}
+
+/* Call to Action Button */
+.cta-button {
+    display: inline-block;
+    background-color: #1eb0c3;
+    color: white;
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.cta-button:hover {
+    background-color: #44c1ae;
+}
+  
+  .interest-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  }
+  
+  .interest-item {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px 0;
+    padding: 10px;
+  }
+  
+  .interest-button {
+    padding: 15px 20px;
+    width:220px;
+    margin-right: 20px;
+    background-color: #1eb0c3;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .interest-button:hover {
+    background-color: #44c1ae;
+  }
+  
+  .interest-description p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+  }
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+img {
+    max-width: 50%;  /* Ensures the image doesn't exceed the container */
+    text-align: center;
+    height: auto;      /* Keeps the aspect ratio */
+    display: block;    /* Prevents extra spacing issues */
+    margin: 0 auto;    /* Centers the image */
+}
