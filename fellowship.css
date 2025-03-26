@@ -163,3 +163,55 @@ img {
     display: block;    /* Prevents extra spacing issues */
     margin: 0 auto;    /* Centers the image */
 }
+
+/* Only apply styles to the contact section */
+#contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+#contactForm {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+#contactForm label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#contactForm input, 
+#contactForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#contactForm textarea {
+    resize: vertical;
+}
+
+#contactForm button {
+    background: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#contactForm button:hover {
+    background: #0056b3;
+}
