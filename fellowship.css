@@ -137,12 +137,15 @@ section p {
     background-color: #44c1ae;
   }
   
+  .interest-description {
+    flex: 1;
+    text-align: center; 
+  }
+   
   .interest-description p {
     margin: 0;
-    font-size: 18px;
+    font-size: 14px;
     color: #555;
-    padding-left: 260px;
-    text-align: center;     
   }
 
 /* Footer Styling */
