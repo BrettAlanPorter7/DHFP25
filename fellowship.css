@@ -138,10 +138,11 @@ section p {
   }
   
   .interest-description p {
-    margin-left: 0;
+    margin: 0;
     font-size: 18px;
     color: #555;
-    text-align: 100px;      
+    padding-left: 260;
+    text-align: center;     
   }
 
 /* Footer Styling */
