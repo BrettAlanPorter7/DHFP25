@@ -138,8 +138,14 @@ section p {
   }
   
   .interest-description p {
-    margin: 0;
+    margin: 260px;
     font-size: 14px;
+    color: #555;
+    text-align: center;      
+  }
+
+  .interest-description h4 {
+    margin: 0;
     color: #555;
     text-align: center;      
   }
