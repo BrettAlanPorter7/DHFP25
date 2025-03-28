@@ -12,7 +12,20 @@ app.use(bodyParser.json());
 
 // Email sending route
 app.post("/send-email", async (req, res) => {
+  const fs = require('fs');
+
+  const previous = fs.readFileSync("mails.json", 'utf8');
+  let json = JSON.parse(previous);
+
   const { name, email, message } = req.body;
+
+  json.emails.push({ name: name, email: email, message: message });
+
+  fs.writeFileSync("mails.json", JSON.stringify(json, null, 4))
+
+  res.status(200).json({ success: true, message: "Email sent successfully!" });
+
+  return;
 
   // Configure your email service
   const transporter = nodemailer.createTransport({
@@ -24,7 +37,7 @@ app.post("/send-email", async (req, res) => {
   });
 
   const mailOptions = {
-    from: email,
+    from: process.env.EMAIL_USER,
     to: process.env.EMAIL_USER,
     subject: `New Contact Form Message from ${name}`,
     text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
